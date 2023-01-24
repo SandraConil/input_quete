@@ -1,0 +1,13 @@
+<div class="info">
+<p>ma copine est {{myPerson.lastName}} </p>
+<p>{{myPerson.firstName}} </p>
+<p>qui a {{myPerson.age}} </p>
+<p>elle est : {{myPerson.bio}} </p>
+<p>{{myPerson.gender}} </p>
+</div>
+
+<div class="tableau">
+<!-- je boucle les items de mon tableau myperson.skill -->
+<p>Ses compétences sont : </p>
+<app-skill *ngFor="let item of myPerson.skills" [name]="item.name" [logo]="item.logo" [site]="item.site"></app-skill>
+</div> 
